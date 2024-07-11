@@ -1,0 +1,1 @@
+for $prestamo in /biblioteca/prestamos/entrada group by $lector := $prestamo/prestamo/lector/nombre let $total_paginas := sum(for $libro in /biblioteca/libros/libro[titulo = $prestamo/titulo]/paginas return xs:integer($libro)) return concat('Lector:', $lector, ' Total de paginas:', $total_paginas)

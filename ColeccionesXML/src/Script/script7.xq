@@ -1,0 +1,1 @@
+for $a in //prestamo return rename node $a/inicio as "fechaInicio"

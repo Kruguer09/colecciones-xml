@@ -1,0 +1,1 @@
+for $a in //prestamo return delete node $a//direccion

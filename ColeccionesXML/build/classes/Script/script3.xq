@@ -1,0 +1,1 @@
+for $prestamo in /biblioteca/prestamos/entrada let $titulo := $prestamo/titulo/text() for $libro in /biblioteca/libros/libro[titulo = $titulo] return concat('Autor',$libro/titulo/text(),' Libro',$libro/autor[1]/nombre/text(),' páginas: ',$libro/paginas/text())

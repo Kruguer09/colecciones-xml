@@ -1,0 +1,1 @@
+for $a in //libro[@publicacion=2002] order by descending return $a/titulo/text()

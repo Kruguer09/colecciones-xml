@@ -1,0 +1,1 @@
+for $a in //libro[@publicacion=2007]/paginas return insert node <evaluacion>10</evaluacion> after $a
